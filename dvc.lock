@@ -1,0 +1,30 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python main.py
+    deps:
+    - path: data/ecommerce_customers.csv
+      hash: md5
+      md5: 01dcd74968ba59ca7bd1923cb9b3eb9b
+      size: 20329
+    - path: main.py
+      hash: md5
+      md5: 5368645c0834ed504ce4f422ff48325f
+      size: 8513
+    outs:
+    - path: experiment1_outputs/normal_clusters_pca.png
+      hash: md5
+      md5: fedce1c26ac733cbf9960abd6dbfb856
+      size: 160088
+    - path: experiment1_outputs/normal_elbow.png
+      hash: md5
+      md5: f0bb014f029db6a13d9e77709b5634d6
+      size: 98450
+    - path: experiment1_outputs/normal_experiment_results.csv
+      hash: md5
+      md5: 0c5f9c8bdeff3870c2ac25e6092aa136
+      size: 481
+    - path: experiment1_outputs/normal_silhouette.png
+      hash: md5
+      md5: bcbf9284df2d4ee2897c8dbfdf6bf137
+      size: 107435

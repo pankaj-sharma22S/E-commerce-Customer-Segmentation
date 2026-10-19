@@ -1,0 +1,34 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# MLflow local tracking store and run artifacts
+mlflow.db
+mlflow.db-journal
+mlruns/
+.gitignore/
+# Generated experiment outputs (recreated by the pipeline)
+experiment1_outputs/
+experiment2_outputs/
+
+# DVC temporary and cache data
+.dvc/tmp/
+.dvc/cache/
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

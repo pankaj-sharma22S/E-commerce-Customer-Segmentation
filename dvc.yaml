@@ -1,0 +1,12 @@
+
+stages:
+  train:
+    cmd: python main.py
+    deps:
+      - main.py
+      - data/ecommerce_customers.csv
+    outs:
+      - experiment1_outputs/normal_experiment_results.csv
+      - experiment1_outputs/normal_elbow.png
+      - experiment1_outputs/normal_silhouette.png
+      - experiment1_outputs/normal_clusters_pca.png
